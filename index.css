@@ -1,0 +1,260 @@
+.frase{
+  text-align: center;
+  justify-content: center;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 20px 0 20px;
+  line-height: 5.5;
+  width: 100%;
+  gap: 10px;
+  margin-top: -50px;
+  color: pink;
+}
+.frase2{
+  text-align: center;
+  border-style:double;
+  border-top-color: pink;
+  border-bottom-color:aquamarine ;
+  border-left-color:rgb(53, 231, 142) ;
+  border-right-color:rgb(148, 4, 129) ;
+  border-width: 10px;
+  margin-bottom: 30px;
+  color:rgb(255, 255, 255);
+  font-size: 30px;
+  font-weight: bold;
+  
+}
+h1{
+  border-radius: 20px;
+  border-style:inset;
+  border-color: aquamarine;
+  margin-left: 50px;
+}
+video{
+  width: 50%;
+  margin-left: 320px;
+}
+    :root {
+      --penguin-size: 400px;
+      --penguin-skin: gray;
+      --penguin-belly: white;
+      --penguin-beak: orange;
+    }
+  
+    @media (max-width: 350px) {
+      :root {
+          --penguin-size:200px;
+          --penguin-skin:black;
+      }
+    }
+  
+    .penguin {
+      position: relative;
+      margin: auto;
+      display: block;
+      margin-top: 5%;
+      width: var(--penguin-size, 300px);
+      height: var(--penguin-size, 300px);
+
+    }
+  
+    .right-cheek {
+      top: 15%;
+      left: 35%;
+      background: var(--penguin-belly, white);
+      width: 60%;
+      height: 70%;
+      border-radius: 70% 70% 60% 60%;
+    }
+  
+    .left-cheek {
+      top: 15%;
+      left: 5%;
+      background: var(--penguin-belly, white);
+      width: 60%;
+      height: 70%;
+      border-radius: 70% 70% 60% 60%;
+    }
+  
+    .belly {
+      top: 60%;
+      left: 2.5%;
+      background: var(--penguin-belly, white);
+      width: 95%;
+      height: 100%;
+      border-radius: 120% 120% 100% 100%;
+    }
+  
+    .penguin-top {
+      top: 10%;
+      left: 25%;
+      background: var(--penguin-skin, gray);
+      width: 50%;
+      height: 45%;
+      border-radius: 70% 70% 60% 60%;
+    }
+  
+    .penguin-bottom {
+      top: 40%;
+      left: 23.5%;
+      background: var(--penguin-skin, gray);
+      width: 53%;
+      height: 45%;
+      border-radius: 70% 70% 100% 100%;
+    }
+  
+    .right-hand {
+      top: 5%;
+      left: 25%;
+      background: var(--penguin-skin, black);
+      width: 30%;
+      height: 60%;
+      border-radius: 30% 30% 120% 30%;
+      transform: rotate(130deg);
+      z-index: -1;
+      animation-duration: 3s;
+      animation-name: wave;
+      animation-iteration-count: infinite;
+      transform-origin:0% 0%;
+      animation-timing-function: linear;
+    }
+  
+    @keyframes wave {
+        10% {
+          transform: rotate(110deg);
+        }
+        20% {
+          transform: rotate(130deg);
+        }
+        30% {
+          transform: rotate(110deg);
+        }
+        40% {
+          transform: rotate(130deg);
+        }
+      }
+  
+    .left-hand {
+      top: 0%;
+      left: 75%;
+      background: var(--penguin-skin, gray);
+      width: 30%;
+      height: 60%;
+      border-radius: 30% 30% 30% 120%;
+      transform: rotate(-45deg);
+      z-index: -1;
+    }
+  
+    .right-feet {
+      top: 85%;
+      left: 60%;
+      background: var(--penguin-beak, orange);
+      width: 15%;
+      height: 30%;
+      border-radius: 50% 50% 50% 50%;
+      transform: rotate(-80deg);
+      z-index: -2222;
+    }
+  
+    .left-feet {
+      top: 85%;
+      left: 25%;
+      background: var(--penguin-beak, orange);
+      width: 15%;
+      height: 30%;
+      border-radius: 50% 50% 50% 50%;
+      transform: rotate(80deg);
+      z-index: -2222;
+    }
+  
+    .right-eye {
+      top: 45%;
+      left: 60%;
+      background: black;
+      width: 15%;
+      height: 17%;
+      border-radius: 50%;
+    }
+  
+    .left-eye {
+      top: 45%;
+      left: 25%;
+      background: black;
+      width: 15%;
+      height: 17%;
+      border-radius: 50%;
+    }
+  
+    .sparkle {
+      top: 25%;
+      left:-23%;
+      background: white;
+      width: 150%;
+      height: 100%;
+      border-radius: 50%;
+    }
+  
+    .blush-right {
+      top: 65%;
+      left: 15%;
+      background: pink;
+      width: 15%;
+      height: 10%;
+      border-radius: 50%;
+    }
+  
+    .blush-left {
+      top: 65%;
+      left: 70%;
+      background: pink;
+      width: 15%;
+      height: 10%;
+      border-radius: 50%;
+    }
+  
+    .beak-top {
+      top: 60%;
+      left: 40%;
+      background: var(--penguin-beak, orange);
+      width: 20%;
+      height: 10%;
+      border-radius: 50%;
+    }
+  
+    .beak-bottom {
+      top: 65%;
+      left: 42%;
+      background: var(--penguin-beak, orange);
+      width: 16%;
+      height: 10%;
+      border-radius: 50%;
+    }
+  
+body {
+      background: url(fondo.jpg) no-repeat center center/cover ;
+    }
+  
+.penguin * {
+      position: absolute;
+      
+    }
+
+    @media(max-width:400px){
+      .penguin{
+        justify-content: center;
+        display:inline-block;
+        position: relative;
+        min-width: 50%;
+        min-height: 50%;
+        margin-left: -30px;
+        opacity: .6;
+      }
+      video{
+        margin-left: 50px;
+        width: 70%;
+        height: 150px;
+      }
+      .frase{
+        margin-left: -20px;
+        border-color: black;
+      }
+    }
